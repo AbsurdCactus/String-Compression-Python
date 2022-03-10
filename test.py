@@ -22,3 +22,8 @@ class TestMain(unittest.TestCase):
         self.assertEqual(main.string_compresser(
             given_string="aabbcc"
         ), "aabbcc")
+
+    def test_abbbcc(self):
+        self.assertEqual(main.string_compresser(
+            given_string="abbbcc"
+        ), "abbbcc")

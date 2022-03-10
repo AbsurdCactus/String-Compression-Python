@@ -12,13 +12,14 @@ def string_compresser(given_string):
             compressed_string += "" + given_string[i] + str(consecutive_counter)
             consecutive_counter = 0
 
-    print(compressed_string)
-    print(type(compressed_string))
+    
+    if len(compressed_string) == len(given_string):
+        return given_string
     return compressed_string
 
 
 
-    return given_string
+ 
 
-string_compresser(given_string="aaabbbccc")
+
 
