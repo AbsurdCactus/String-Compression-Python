@@ -1,5 +1,6 @@
 def string_compresser(given_string):
 
-    return False
+    print("hi")
 
 
+string_compresser()
