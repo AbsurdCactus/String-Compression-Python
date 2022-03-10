@@ -1,6 +1,7 @@
 def string_compresser(given_string):
 
-    
+    # This is a brute force solution. Try writing more efficient code 
+    # the next time you revisit this. But good job!
     compressed_string = ""
     consecutive_counter = 0
 
