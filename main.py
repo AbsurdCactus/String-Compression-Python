@@ -1,6 +1,24 @@
 def string_compresser(given_string):
 
-    print("hi")
+    
+    compressed_string = ""
+    consecutive_counter = 0
+
+    for i in range(len(given_string)):
+
+        consecutive_counter += 1
+
+        if i + 1 >= len(given_string) or given_string[i] != given_string[i+1]: 
+            compressed_string += "" + given_string[i] + str(consecutive_counter)
+            consecutive_counter = 0
+
+    print(compressed_string)
+    print(type(compressed_string))
+    return compressed_string
 
 
-string_compresser()
+
+    return given_string
+
+string_compresser(given_string="aaabbbccc")
+
